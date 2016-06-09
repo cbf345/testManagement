@@ -17,24 +17,17 @@ import org.apache.wicket.request.Response;
  */
 public class WicketApplication extends  WebApplication
 {
-	/**
-	 * @see org.apache.wicket.Application#getHomePage()
-	 */
 	@Override
 	public Class<? extends WebPage> getHomePage()
 	{
 		return LoginPage.class;
 	}
 
-	/**
-	 * @see org.apache.wicket.Application#init()
-	 */
+	
 	@Override
 	public void init()
 	{
 		super.init();
-
-		// add your configuration here
 	}
 	
 	public Session newSession(Request req,Response resp){

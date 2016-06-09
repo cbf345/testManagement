@@ -8,10 +8,6 @@ import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.Model;
 
-/**
- *
- * @author kkosuke
- */
 public class LoginPage extends WebPage {
 
     private static final long serialVersionUID = 3595965707720952935L;
@@ -30,10 +26,10 @@ public class LoginPage extends WebPage {
             @Override
             protected void onSubmit() {
             	if(dao.loginConfirm(accountIdModel.getObject(), passwordModel.getObject())){
-            		dao.createAccountSession(accountIdModel.getObject());
+            		TestManagementSession session = (TestManagementSession)getSession();
+            		session.setAccount(dao.selectAccount(accountIdModel.getObject(), passwordModel.getObject()));
             		setResponsePage(new ListPage());
             	}else{
-            		
             		setResponsePage(new LoginPage());	
             	}
             }
