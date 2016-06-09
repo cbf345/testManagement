@@ -32,6 +32,8 @@ public class TestManagementDAO implements Serializable {
 			pstmt.setString(2, password);
 
 			ResultSet rs = pstmt.executeQuery();
+			
+//			System.out.println(rs.getString("name")); //SQLexception...なぜ
 
 			return rs.next();// 該当結果があればtrue,なければfalseを返す
 		} catch (ClassNotFoundException | SQLException ex) {
@@ -54,13 +56,11 @@ public class TestManagementDAO implements Serializable {
 
 			ResultSet rs = pstmt.executeQuery();
 			
-//			System.out.println(rs.getString("name")); //SQLexception...なぜ
-			
+			rs.next();
 			return new Account(rs.getString("account_id"),
 								rs.getString("name"),
-								rs.getString("department")); //SQLexception...なぜ
+								rs.getString("department"));
 			
-//			return new Account("a","a","a"); //通った...
 		} catch (ClassNotFoundException | SQLException ex) {
 			ex.printStackTrace();
 		}
