@@ -1,4 +1,4 @@
-package jp.wisteria.wicket_practice;
+package jp.wisteria.wicket_practice.bean;
 
 public class Account {
 	private String accountName;

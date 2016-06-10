@@ -8,6 +8,8 @@ import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.Model;
 
+import jp.wisteria.wicket_practice.dao.TestManagementDAO;
+
 public class LoginPage extends WebPage {
 
     private static final long serialVersionUID = 3595965707720952935L;

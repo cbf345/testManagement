@@ -1,4 +1,4 @@
-package jp.wisteria.wicket_practice;
+package jp.wisteria.wicket_practice.dao;
 
 import java.io.Serializable;
 import java.sql.Connection;
@@ -6,6 +6,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
+import jp.wisteria.wicket_practice.bean.Account;
 
 public class TestManagementDAO implements Serializable {
 	private static final long serialVersionUID = -3675765952535426498L;

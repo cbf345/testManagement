@@ -3,6 +3,8 @@ package jp.wisteria.wicket_practice;
 import org.apache.wicket.protocol.http.WebSession;
 import org.apache.wicket.request.Request;
 
+import jp.wisteria.wicket_practice.bean.Account;
+
 public class TestManagementSession extends WebSession{
 
 	private static final long serialVersionUID = -7807773455295865256L;
