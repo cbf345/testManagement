@@ -1,0 +1,2 @@
+insert into account ("account_id","name","password","department") values("admin","管理者","admin","管理者");
+insert into account ("account_id","name","password","department") values("loginname-1","加藤紘輔","test","開発者");
