@@ -1,4 +1,4 @@
-CREATE TABLE account (
+CREATE TABLE `account` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `account_id` varchar(40) DEFAULT NULL,
   `name` varchar(40) DEFAULT NULL,
