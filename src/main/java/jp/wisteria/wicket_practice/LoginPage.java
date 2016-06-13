@@ -30,7 +30,7 @@ public class LoginPage extends WebPage {
             	if(dao.loginConfirm(accountIdModel.getObject(), passwordModel.getObject())){
             		TestManagementSession session = (TestManagementSession)getSession();
             		session.setAccount(dao.selectAccount(accountIdModel.getObject(), passwordModel.getObject()));
-            		setResponsePage(new ListPage());
+            		setResponsePage(new ProductListPage());
             	}else{
             		setResponsePage(new LoginPage());	
             	}
