@@ -36,7 +36,7 @@ public class NavBar extends WebPage{
 			private static final long serialVersionUID = -7897368762346521153L;
 
 			public void onClick(){
-				setResponsePage(new LogoutPage());
+				setResponsePage(new LogoutConfirmPage());
 			}
 		};
 		add(createAccountLink);
